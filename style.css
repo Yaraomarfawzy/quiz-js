@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f5f5f5; /* لون خلفية هادئ */
+  color: #333; 
+  padding: 10px;
+ 
+   }
+
+.container-page,
+.quiz-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+.container-page .start {
+    background: #e63946;
+    color: #fff;
+    padding: 8px 32px;
+    border-radius: 8px;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 20px;
+    z-index: 444;
+  }
+
+ 
+  .next {
+    position: relative; /* لتصبح الحاوية مرجعاً للمطلقة */
+    width: 600px;
+    margin: 0 auto;
+}
+
+.slide {
+    position: absolute; /* الإبقاء على الموضع المطلق */
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden; /* إخفاء الشرائح غير النشطة */
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    visibility: visible; /* إظهار الشريحة النشطة */
+}
+
+.container .next {
+  height: 200px;
+ 
+}
+.options{
+  background-color: #e63946;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.options li{
+  width: 45%;
+  list-style-type: none;
+ margin: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+.options button{
+
+  width: 100%;
+  padding: 10px;
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  /* background-color: #f8f9fa; */
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.next h2{
+  text-align: center;
+}
+.btn,
+#restart-2{
+  width: 100px;
+  height: 50px;
+background-color: black;
+color: white !important;
+
+}
+#restart-2{
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+ header h2{
+  display: none;
+}
+.next h2{
+  font-size: 20px;
+}
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #007bff; /* لون أزرق جذاب للعناوين */
+}
+.timer{ 
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+  background-color: #e63946;
+  color: #fff;
+  padding: 5px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.timer2, .timer3 {
+  font-size: 1rem;
+  margin: 10px;
+  color: #555 !important;
+  display: inline-block;
+}
+.timer3{
+  text-align: right !important;
+}
+#result,
+#restart-2{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .options li {
+      width: 100%;
+  }
+
+  .btn {
+      width: 100%;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+ @media (max-width: 768px) {
+    .options li {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}

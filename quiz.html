@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Quiz</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    
+</head>
+<body>
+    <header class="w-100">
+        <h1>General Knowledge Quiz</h1>
+        <span class="timer  ">Time left: <span id="time">15</span> seconds</span>
+        <h2 >Time  is Up</h2>
+        <button id="restart-2"> restart</button>
+      </header>
+      <div class="container m-5 w-100">
+      <div class="d-flex justify-content-evenly">
+        <span class="timer2 ">number of Question <span id="number">1</span> /6</span>
+        <span class="timer3 "> score <span id="score">0</span> /5</span>
+      </div>
+      <div class="d-flex justify-content-center">
+        <progress id="file" value="0" max="100" class="m-auto w-75 p-3"> </progress>
+      </div>
+        <div class="next w-100">
+            <div class="slide active w-100">
+                <h2>What does HTML stand for?</h2>
+                <ul class="options d-flex  flex-wrap p-4 m-2">
+                    <li><button>Hyper Text Markup Language</button></li>
+                    <li><button>High Transfer Markup Logic</button></li>
+                    <li><button>Hyperlink Text Management Language</button></li>
+                    <li><button>Home Tool Markup Language</button></li>
+                </ul>
+            </div>
+            <div class="slide w-100">
+                <h2>What does CSS stand for?</h2>
+                <ul class="options d-flex w-100 flex-wrap p-4 m-2">
+                    <li><button>Cascading Style Sheets</button></li>
+                    <li><button>Computer Style System</button></li>
+                    <li><button>Creative Styling System</button></li>
+                    <li><button>Colorful Styling Syntax</button></li>
+                </ul>
+            </div> 
+            <div class="slide w-100">
+                <h2>What does JavaScript stand for?</h2>
+                <ul class="options d-flex w-100 flex-wrap p-4 m-2">
+                    <li><button>To add interactivity to web pages</button></li>
+                    <li><button>To style web pages</button></li>
+                    <li><button>To structure web pages</button></li>
+                    <li><button>To store data on servers</button></li>
+                </ul>
+            </div>
+            <div class="slide w-100">
+                <h2>Which of the following is a JavaScript framework?</h2>
+                <ul class="options d-flex w-100 flex-wrap p-4 m-2">
+                    <li><button>React</button></li>
+                    <li><button>HTML</button></li>
+                    <li><button>CSS</button></li>
+                    <li><button>Bootstrap</button></li>
+                </ul>
+            </div>
+            <div class="slide w-100">
+              <h2>What is the purpose of the &lt;head&gt; element in an HTML document?</h2>
+              <ul class="options d-flex w-100 flex-wrap p-4 m-2">
+                  <li><button>To contain metadata and links to external resources</button></li>
+                  <li><button>To display the main content of the webpage</button></li>
+                  <li><button>To define the footer of the webpage</button></li>
+                  <li><button>To handle user interactions with JavaScript</button></li>
+              </ul>
+          </div>
+          
+        </div>
+    </div>
+
+    <button class="btn bg-black">Next</button>
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" id="restart" >restart again</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" id="result">result</button>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/quiz.js"></script>
+</script>
+    
+</body>
+</html>
+
