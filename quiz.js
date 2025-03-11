@@ -1,6 +1,6 @@
 let start = document.querySelector("button");
 start.onclick = function () {
-    location.href = "/quiz.html";
+    location.href = "quiz.html";
 };
 
 let next = document.querySelector(".btn");
